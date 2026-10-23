@@ -1,0 +1,259 @@
+{
+ "format": "astra-market",
+ "schema": 1,
+ "generated_at": "2026-10-23T18:27:28+00:00",
+ "repository": "https://github.com/Kkillua23/astra-market",
+ "items": [
+  {
+   "type": "command",
+   "id": "focus-music",
+   "name": {
+    "ru": "Музыка для фокуса",
+    "en": "Focus music"
+   },
+   "description": {
+    "ru": "«Музыка для фокуса» — громкость 35 и спокойная музыка для работы на YouTube.",
+    "en": "Sets the volume to 35 and plays calm focus music on YouTube (Russian phrases)."
+   },
+   "author": "Astra",
+   "version": "1.0.0",
+   "tags": [
+    "music",
+    "focus"
+   ],
+   "featured": true,
+   "min_app_version": "0.0.0",
+   "homepage": null,
+   "added_at": "2026-10-23",
+   "updated_at": "2026-10-23",
+   "permissions": [],
+   "requires": [],
+   "package": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/packages/commands/focus-music-1.0.0.zip",
+    "sha256": "56d4f2b83d2a732700cde80c81ae3e61e8fb2ccf259546710d2891d8f46b3490",
+    "size": 1151
+   },
+   "preview": null,
+   "icon": null,
+   "symbol": "music",
+   "screenshots": [],
+   "changelog": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/files/commands/focus-music/CHANGELOG.md",
+    "sha256": "2249b053cd8a183ab8bac7cebc20f82a06b33ae5474ecf5cf76a9af81a3c6569",
+    "size": 74
+   }
+  },
+  {
+   "type": "command",
+   "id": "tea-break",
+   "name": {
+    "ru": "Перерыв на чай",
+    "en": "Tea break"
+   },
+   "description": {
+    "ru": "Скажите «перерыв на чай» — Астра ответит и через четыре минуты напомнит, что чай заварился.",
+    "en": "Say “перерыв на чай” and Astra reminds you in four minutes that your tea is ready (Russian phrases)."
+   },
+   "author": "Astra",
+   "version": "1.0.0",
+   "tags": [
+    "timer",
+    "voice"
+   ],
+   "featured": false,
+   "min_app_version": "0.0.0",
+   "homepage": null,
+   "added_at": "2026-10-23",
+   "updated_at": "2026-10-23",
+   "permissions": [],
+   "requires": [],
+   "package": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/packages/commands/tea-break-1.0.0.zip",
+    "sha256": "cc03b6875acc199e051ee23a20f52c9107ced886f3af1880e186c14697b2e7e4",
+    "size": 1188
+   },
+   "preview": null,
+   "icon": null,
+   "symbol": "coffee",
+   "screenshots": [],
+   "changelog": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/files/commands/tea-break/CHANGELOG.md",
+    "sha256": "b53df9331069fd85c5549a19df35be6136074d6ef8b4b6a65c922e81dfcf98a2",
+    "size": 68
+   }
+  },
+  {
+   "type": "plugin",
+   "id": "pomodoro",
+   "name": {
+    "ru": "Помодоро",
+    "en": "Pomodoro"
+   },
+   "description": {
+    "ru": "Таймер «работа — перерыв»: узлы для команд, виджет с кнопками, голос в конце фазы, пауза в игре.",
+    "en": "A work–break timer: command nodes, a widget with buttons, voice at the end of a phase, pause in games."
+   },
+   "author": "Astra",
+   "version": "1.0.0",
+   "tags": [],
+   "featured": true,
+   "min_app_version": "0.0.1",
+   "homepage": null,
+   "added_at": "2026-10-23",
+   "updated_at": "2026-10-23",
+   "permissions": [],
+   "requires": [],
+   "package": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/packages/plugins/pomodoro-1.0.0.zip",
+    "sha256": "be8f1df43d15fd1d0aa8727eadb684aa7d2ecef0cf16f5ac94e0cb08f19cdbd6",
+    "size": 5278
+   },
+   "preview": null,
+   "icon": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/files/plugins/pomodoro/icon.svg",
+    "sha256": "35e324c2a5e7bf9fb7dd8b033160b9d50e3b02ef5cda55cf16666dc078bd1b58",
+    "size": 618
+   },
+   "symbol": null,
+   "screenshots": [],
+   "changelog": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/files/plugins/pomodoro/CHANGELOG.md",
+    "sha256": "de1d95180d64028f00d993e8b1333a6e5cc48806c4f1c8e7572fe7c2c7161bba",
+    "size": 193
+   }
+  },
+  {
+   "type": "plugin",
+   "id": "random-fact",
+   "name": {
+    "ru": "Случайный факт",
+    "en": "Random fact"
+   },
+   "description": {
+    "ru": "Интересные факты: ИИ расскажет по просьбе, виджет покажет новый по кнопке.",
+    "en": "Fun facts: the AI tells one on request, the widget shows a new one at a click."
+   },
+   "author": "Astra",
+   "version": "1.0.0",
+   "tags": [],
+   "featured": false,
+   "min_app_version": "0.0.1",
+   "homepage": null,
+   "added_at": "2026-10-23",
+   "updated_at": "2026-10-23",
+   "permissions": [
+    "ai"
+   ],
+   "requires": [],
+   "package": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/packages/plugins/random-fact-1.0.0.zip",
+    "sha256": "2557e2b5fd5ed30bbf42673972ed048cfa4f5a6c648392d546c03d58982ba83f",
+    "size": 5495
+   },
+   "preview": null,
+   "icon": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/files/plugins/random-fact/icon.svg",
+    "sha256": "539af4196872c8090b980c14fd72b31e67d9d410288f48503f839215fe901c91",
+    "size": 546
+   },
+   "symbol": null,
+   "screenshots": [],
+   "changelog": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/files/plugins/random-fact/CHANGELOG.md",
+    "sha256": "cc696138fda621a364161224183bb3908802dd94a2d28c7ccf46752f7d8c59a0",
+    "size": 197
+   }
+  },
+  {
+   "type": "theme",
+   "id": "peach",
+   "name": {
+    "ru": "Персик",
+    "en": "Peach"
+   },
+   "description": {
+    "ru": "Светлая тёплая тема: персиковые и розовые капли под белым стеклом.",
+    "en": "A light, warm theme: peach and pink blobs under white glass."
+   },
+   "author": "Astra",
+   "version": "1.0.0",
+   "tags": [
+    "light",
+    "warm"
+   ],
+   "featured": false,
+   "min_app_version": "0.0.0",
+   "homepage": null,
+   "added_at": "2026-10-23",
+   "updated_at": "2026-10-23",
+   "permissions": [],
+   "requires": [],
+   "package": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/packages/themes/peach-1.0.0.zip",
+    "sha256": "3cc85c159f166d56980c0d5802a16a8891021e04880824c32528aa9f1f266d46",
+    "size": 926
+   },
+   "preview": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/files/themes/peach/preview.png",
+    "sha256": "9e13c4e94a220bd616f43cbf925da2f0b68d7d34f7fcd992d957710ab286a799",
+    "size": 137612
+   },
+   "icon": null,
+   "symbol": null,
+   "screenshots": [],
+   "changelog": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/files/themes/peach/CHANGELOG.md",
+    "sha256": "d6fd33252d96eb2c866c24c0e83ebfd9347650724ae7958a79650a55c1d6f5d3",
+    "size": 54
+   },
+   "appearance": "light",
+   "accent": "#ea580c"
+  },
+  {
+   "type": "theme",
+   "id": "polar-night",
+   "name": {
+    "ru": "Полярная ночь",
+    "en": "Polar Night"
+   },
+   "description": {
+    "ru": "Холодная туманность с бирюзовым сиянием и мягким стеклом. Спокойная тёмная тема для долгой работы.",
+    "en": "A cold nebula with a turquoise glow and soft glass. A calm dark theme for long sessions."
+   },
+   "author": "Astra",
+   "version": "1.0.0",
+   "tags": [
+    "dark",
+    "blue",
+    "calm"
+   ],
+   "featured": true,
+   "min_app_version": "0.0.0",
+   "homepage": null,
+   "added_at": "2026-10-23",
+   "updated_at": "2026-10-23",
+   "permissions": [],
+   "requires": [],
+   "package": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/packages/themes/polar-night-1.0.0.zip",
+    "sha256": "83f5353b665f752e63e9247a95c6eede2a1cc4140f1ed3e1d8146da9a60b5226",
+    "size": 1049
+   },
+   "preview": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/files/themes/polar-night/preview.png",
+    "sha256": "5ce62bf3f3b56c636c5914152d58c26519f48a728dc1e05255d868cfe34f2d86",
+    "size": 172679
+   },
+   "icon": null,
+   "symbol": null,
+   "screenshots": [],
+   "changelog": {
+    "url": "https://raw.githubusercontent.com/Kkillua23/astra-market/catalog/files/themes/polar-night/CHANGELOG.md",
+    "sha256": "2a4504e8a22e266f664cec0610ade2943dc7b7da4c41412a9133daeec51c3805",
+    "size": 67
+   },
+   "appearance": "dark",
+   "accent": "#67e8f9"
+  }
+ ]
+}
