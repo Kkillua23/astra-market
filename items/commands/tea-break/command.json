@@ -1,0 +1,28 @@
+{
+  "format": "astra-command",
+  "schema": 1,
+  "app_version": "0.12.0",
+  "command": {
+    "name": "Перерыв на чай",
+    "icon": "coffee",
+    "enabled": true,
+    "graph": {
+      "nodes": [
+        { "id": "t1", "type": "trigger.phrase", "params": { "phrases": ["перерыв на чай", "поставь чай"] } },
+        { "id": "a1", "type": "action.speak", "params": { "text": "Хорошо, напомню через четыре минуты" } },
+        { "id": "d1", "type": "control.delay", "params": { "amount": 4, "unit": "min" } },
+        { "id": "a2", "type": "action.notify", "params": { "text": "Чай готов ☕" } },
+        { "id": "a3", "type": "action.speak", "params": { "text": "Чай готов" } }
+      ],
+      "edges": [
+        { "id": "e1", "source": "t1", "target": "a1" },
+        { "id": "e2", "source": "a1", "target": "d1" },
+        { "id": "e3", "source": "d1", "target": "a2" },
+        { "id": "e4", "source": "a2", "target": "a3" }
+      ]
+    },
+    "variables": [],
+    "settings": { "on_error": "stop", "concurrency": "restart" }
+  },
+  "plugins": []
+}

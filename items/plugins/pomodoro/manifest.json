@@ -1,0 +1,48 @@
+{
+  "id": "pomodoro",
+  "name": { "ru": "Помодоро", "en": "Pomodoro" },
+  "version": "1.0.0",
+  "author": "Astra",
+  "description": {
+    "ru": "Таймер «работа — перерыв»: узлы для команд, виджет с кнопками, голос в конце фазы, пауза в игре.",
+    "en": "A work–break timer: command nodes, a widget with buttons, voice at the end of a phase, pause in games."
+  },
+  "icon": "icon.svg",
+  "api_version": 1,
+  "min_app_version": "0.0.1",
+  "permissions": [],
+  "entry": "main.py",
+  "settings_schema": {
+    "work": {
+      "type": "integer",
+      "label": { "ru": "Работа, минут", "en": "Work, minutes" },
+      "default": 25,
+      "min": 1,
+      "max": 180
+    },
+    "break": {
+      "type": "integer",
+      "label": { "ru": "Перерыв, минут", "en": "Break, minutes" },
+      "default": 5,
+      "min": 1,
+      "max": 60
+    },
+    "rounds": {
+      "type": "integer",
+      "label": { "ru": "Кругов подряд", "en": "Rounds in a row" },
+      "default": 4,
+      "min": 1,
+      "max": 12
+    },
+    "speak": {
+      "type": "boolean",
+      "label": { "ru": "Говорить о смене фазы", "en": "Announce phase changes" },
+      "default": true
+    },
+    "pause_in_games": {
+      "type": "boolean",
+      "label": { "ru": "Пауза в игровом режиме", "en": "Pause in game mode" },
+      "default": true
+    }
+  }
+}

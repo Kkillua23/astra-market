@@ -1,0 +1,12 @@
+{
+  "id": "peach",
+  "type": "theme",
+  "name": { "ru": "Персик", "en": "Peach" },
+  "description": {
+    "ru": "Светлая тёплая тема: персиковые и розовые капли под белым стеклом.",
+    "en": "A light, warm theme: peach and pink blobs under white glass."
+  },
+  "author": "Astra",
+  "version": "1.0.0",
+  "tags": ["light", "warm"]
+}

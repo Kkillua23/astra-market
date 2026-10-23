@@ -1,0 +1,12 @@
+{
+  "id": "focus-music",
+  "type": "command",
+  "name": { "ru": "Музыка для фокуса", "en": "Focus music" },
+  "description": {
+    "ru": "«Музыка для фокуса» — громкость 35 и спокойная музыка для работы на YouTube.",
+    "en": "Sets the volume to 35 and plays calm focus music on YouTube (Russian phrases)."
+  },
+  "author": "Astra",
+  "version": "1.0.0",
+  "tags": ["music", "focus"]
+}

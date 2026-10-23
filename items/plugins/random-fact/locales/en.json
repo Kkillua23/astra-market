@@ -1,0 +1,7 @@
+{
+  "next": "Another fact",
+  "fromAi": "Made up by the AI",
+  "fromList": "From the built-in list",
+  "anyTopic": "anything",
+  "prompt": "Tell me one short, surprising and true fact about: {topic}. One or two sentences, no preamble."
+}

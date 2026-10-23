@@ -1,0 +1,43 @@
+# Проверка пулл-реквеста: схема манифеста, размеры, файлы плагинов, рост версии.
+name: Проверка
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Проверить элементы
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            python scripts/market.py validate --base-ref "origin/${{ github.base_ref }}"
+          else
+            python scripts/market.py validate
+          fi
+
+      - name: Рекомендуемые меняет только владелец
+        if: >-
+          github.event_name == 'pull_request' &&
+          !contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'),
+                    github.event.pull_request.author_association)
+        run: |
+          if git diff --name-only "origin/${{ github.base_ref }}...HEAD" | grep -Eq '^(featured\.json|scripts/|\.github/)'; then
+            echo "::error::featured.json, scripts/ и .github/ меняет только владелец каталога"
+            exit 1
+          fi
+
+      - name: Пробная сборка
+        run: python scripts/market.py build --out public

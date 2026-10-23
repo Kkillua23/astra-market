@@ -1,0 +1,12 @@
+{
+  "id": "tea-break",
+  "type": "command",
+  "name": { "ru": "Перерыв на чай", "en": "Tea break" },
+  "description": {
+    "ru": "Скажите «перерыв на чай» — Астра ответит и через четыре минуты напомнит, что чай заварился.",
+    "en": "Say “перерыв на чай” and Astra reminds you in four minutes that your tea is ready (Russian phrases)."
+  },
+  "author": "Astra",
+  "version": "1.0.0",
+  "tags": ["timer", "voice"]
+}

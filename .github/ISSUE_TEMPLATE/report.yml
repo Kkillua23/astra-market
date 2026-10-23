@@ -1,0 +1,29 @@
+name: Пожаловаться на элемент / Report an item
+description: Тема, команда или плагин ведёт себя плохо или нарушает правила
+title: '[Жалоба] '
+labels: [report]
+body:
+  - type: input
+    id: item
+    attributes:
+      label: Элемент / Item
+      description: Тип и id, например plugins/pomodoro
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Причина / Reason
+      options:
+        - Вредоносный или подозрительный код / Malicious code
+        - Не работает / Broken
+        - Нарушает авторские права / Copyright
+        - Неприемлемое содержимое / Inappropriate content
+        - Другое / Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Подробности / Details
+      description: Что случилось, версия Astra, шаги

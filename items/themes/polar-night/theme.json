@@ -1,0 +1,20 @@
+{
+  "id": "polar-night",
+  "name": { "ru": "Полярная ночь", "en": "Polar Night" },
+  "author": "Astra",
+  "version": "1.0.0",
+  "appearance": "dark",
+  "background": {
+    "mode": "nebula",
+    "colors": ["#38bdf8", "#22d3ee", "#818cf8", "#0c4a6e"],
+    "base": "#020617",
+    "speed": 0.6,
+    "count": 4,
+    "glow": 1.2,
+    "grain": 0.2,
+    "contrast": 1.1
+  },
+  "glass": { "tint": "#e0f2fe", "opacity": 0.07, "blur": 32, "saturation": 150, "border": 0.12 },
+  "accent": "#67e8f9",
+  "radius": "round"
+}

@@ -1,0 +1,46 @@
+# Публикация: после слияния в main собирает index.json и zip-пакеты и кладёт их
+# в ветку catalog. Astra читает https://raw.githubusercontent.com/<owner>/<repo>/catalog/index.json
+name: Публикация каталога
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-catalog
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Собрать каталог
+        run: >-
+          python scripts/market.py build --out public
+          --base-url "https://raw.githubusercontent.com/${{ github.repository }}/catalog/"
+          --repository "https://github.com/${{ github.repository }}"
+
+      - name: Выложить в ветку catalog
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd public
+          git init -q -b catalog
+          git add -A
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Каталог из ${GITHUB_SHA::7}"
+          git push -q --force "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" catalog
+          echo "Каталог: https://raw.githubusercontent.com/${{ github.repository }}/catalog/index.json" >> "$GITHUB_STEP_SUMMARY"

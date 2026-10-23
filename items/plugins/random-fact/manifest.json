@@ -1,0 +1,36 @@
+{
+  "id": "random-fact",
+  "name": { "ru": "Случайный факт", "en": "Random fact" },
+  "version": "1.0.0",
+  "author": "Astra",
+  "description": {
+    "ru": "Интересные факты: ИИ расскажет по просьбе, виджет покажет новый по кнопке.",
+    "en": "Fun facts: the AI tells one on request, the widget shows a new one at a click."
+  },
+  "icon": "icon.svg",
+  "api_version": 1,
+  "min_app_version": "0.0.1",
+  "permissions": ["ai"],
+  "entry": "main.py",
+  "settings_schema": {
+    "source": {
+      "type": "select",
+      "label": { "ru": "Откуда брать факты", "en": "Where facts come from" },
+      "options": {
+        "builtin": { "ru": "Встроенный список", "en": "Built-in list" },
+        "ai": { "ru": "Придумывает ИИ", "en": "Made up by the AI" }
+      },
+      "default": "builtin"
+    },
+    "topic": {
+      "type": "string",
+      "label": { "ru": "Тема для ИИ", "en": "Topic for the AI" },
+      "placeholder": { "ru": "космос, животные, история…", "en": "space, animals, history…" },
+      "hint": {
+        "ru": "Только если факты придумывает ИИ",
+        "en": "Only when the AI makes up facts"
+      },
+      "max_length": 80
+    }
+  }
+}

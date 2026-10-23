@@ -1,0 +1,12 @@
+{
+  "id": "polar-night",
+  "type": "theme",
+  "name": { "ru": "Полярная ночь", "en": "Polar Night" },
+  "description": {
+    "ru": "Холодная туманность с бирюзовым сиянием и мягким стеклом. Спокойная тёмная тема для долгой работы.",
+    "en": "A cold nebula with a turquoise glow and soft glass. A calm dark theme for long sessions."
+  },
+  "author": "Astra",
+  "version": "1.0.0",
+  "tags": ["dark", "blue", "calm"]
+}

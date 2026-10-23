@@ -1,0 +1,20 @@
+{
+  "id": "peach",
+  "name": { "ru": "Персик", "en": "Peach" },
+  "author": "Astra",
+  "version": "1.0.0",
+  "appearance": "light",
+  "background": {
+    "mode": "blobs",
+    "colors": ["#fdba74", "#fda4af", "#fcd34d", "#f9a8d4"],
+    "base": "#fff7ed",
+    "speed": 0.7,
+    "count": 5,
+    "glow": 0.8,
+    "grain": 0.15,
+    "contrast": 0.9
+  },
+  "glass": { "tint": "#ffffff", "opacity": 0.55, "blur": 28, "saturation": 160, "border": 0.08 },
+  "accent": "#ea580c",
+  "radius": "round"
+}

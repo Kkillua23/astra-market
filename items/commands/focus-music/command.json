@@ -1,0 +1,26 @@
+{
+  "format": "astra-command",
+  "schema": 1,
+  "app_version": "0.12.0",
+  "command": {
+    "name": "Музыка для фокуса",
+    "icon": "music",
+    "enabled": true,
+    "graph": {
+      "nodes": [
+        { "id": "t1", "type": "trigger.phrase", "params": { "phrases": ["музыка для фокуса", "хочу сосредоточиться"] } },
+        { "id": "a1", "type": "action.volume", "params": { "level": 35 } },
+        { "id": "a2", "type": "action.youtube", "params": { "query": "deep focus music" } },
+        { "id": "a3", "type": "action.notify", "params": { "text": "Фокус включён — удачи" } }
+      ],
+      "edges": [
+        { "id": "e1", "source": "t1", "target": "a1" },
+        { "id": "e2", "source": "a1", "target": "a2" },
+        { "id": "e3", "source": "a2", "target": "a3" }
+      ]
+    },
+    "variables": [],
+    "settings": { "on_error": "continue", "concurrency": "ignore" }
+  },
+  "plugins": []
+}

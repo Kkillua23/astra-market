@@ -1,0 +1,20 @@
+{
+  "started": "Pomodoro: working for {minutes} minutes",
+  "stopped": "Pomodoro stopped",
+  "paused": "Pomodoro paused",
+  "resumed": "Pomodoro resumed",
+  "nothing": "Pomodoro isn't running",
+  "pausedForGame": "Pomodoro paused — game mode is on",
+  "breakTime": "Break for {minutes} minutes — take a rest",
+  "workTime": "Break is over, round {round} — back to work",
+  "allDone": "All pomodoro rounds done, great job",
+  "ready": "Ready to work",
+  "work": "Work",
+  "break": "Break",
+  "round": "round {round}",
+  "onPause": "paused",
+  "start": "Start",
+  "pause": "Pause",
+  "resume": "Resume",
+  "stop": "Stop"
+}
